@@ -1,0 +1,6 @@
+name = Login to Dashboard
+description = Takes the user from login straight to the Dashboard
+core = 7.x
+package = User
+dependencies[] = dashboard
+configure = admin/config/people/login
