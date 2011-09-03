@@ -1,0 +1,9 @@
+<?php
+
+function dashboard_login_form_user_login_alter(&$form, &$form_state) {
+  $form['#submit'][] = 'dashboard_login_user_redirect';
+}
+
+function dashboard_login_user_redirect($form, &$form_state) {
+  $form_state['redirect'] = 'admin/dashboard';
+}
